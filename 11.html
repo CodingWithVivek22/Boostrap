@@ -1,0 +1,606 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            background-color: blueviolet;
+            height: 100vh;
+            margin-left: 130px;
+            margin-right: 130px;
+        }
+
+        .main-nev {
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+        }
+
+        .left-side {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+        }
+
+        .right-side {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
+        #flipkart {
+            background-color: yellow;
+            padding: 12px 25px;
+            border-radius: 12px;
+        }
+
+        #travel {
+            background-color: lightgray;
+            padding: 12px 25px;
+            border-radius: 12px;
+        }
+
+        .sec-nev {
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .sec-left-side {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #input-field {
+            font-size: 20px;
+            padding-left: 20px;
+            padding-right: 400px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            border-color: blue;
+        }
+
+        #input-field:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(0, 102, 255, 0.4);
+        }
+
+        .sec-right-side {
+
+            margin-right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        a {
+            text-decoration: None;
+        }
+
+        .third-nev {
+            background-color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .third-nev a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            color: black;
+        }
+
+        .third-nev i {
+            font-size: 20px;
+        }
+
+        .third-nev a {
+            color: black;
+            transition: 0.3s;
+        }
+
+        .third-nev a:hover {
+            color: blue;
+            transform: scale(1.1);
+        }
+
+        .header-container {
+            position: fixed;
+            top: 0;
+            width: calc(100% - 260px);
+            z-index: 1000;
+        }
+
+
+
+
+        .forth-contain {
+            background-color: white;
+
+            margin-top: 200px;
+
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #forth-img1 {
+            height: 220px;
+            width: 400px;
+            border-radius: 15px;
+        }
+
+        #forth-img2 {
+            height: 220px;
+            width: 400px;
+            border-radius: 15px;
+        }
+
+        #forth-img3 {
+            height: 220px;
+            width: 400px;
+            border-radius: 15px;
+        }
+
+        #forth-img1,
+        #forth-img2,
+        #forth-img3 {
+            transition: 0.4s;
+        }
+
+        #forth-img1:hover,
+        #forth-img2:hover,
+        #forth-img3:hover {
+            transform: scale(1.03);
+        }
+
+        .fifth-nev {
+            background-color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #suggest {
+            font-size: 25px;
+        }
+
+        #right-arrow {
+            color: white;
+            font-size: 25px;
+            background-color: rgba(8, 66, 255, 0.831);
+
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            border-radius: 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .six-contain {
+            background-color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .six-img1-bottom {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .six-img2-bottom {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .six-img3-bottom {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .six-img4-bottom {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+
+        .six-img5-bottom {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .six-img1,
+        .six-img2,
+        .six-img3,
+        .six-img4,
+        .six-img5 {
+            transition: all 0.3s ease;
+        }
+
+        .six-img1:hover,
+        .six-img2:hover,
+        .six-img3:hover,
+        .six-img4:hover,
+        .six-img5:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .summer-section {
+            background-color: rgb(255, 102, 46);
+            margin-top: 30px;
+            border-radius: 15px;
+            padding-bottom: 15px;
+        }
+
+        .summer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 15px;
+            color: white;
+        }
+
+        .summer-arrow {
+            background-color: white;
+            color: black;
+
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 25px;
+        }
+
+        .summer-products {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .summer-card {
+            background-color: rgb(240, 240, 240);
+            width: 25%;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .summer-card img {
+            width: 100%;
+            height: 230px;
+            object-fit: contain;
+        }
+
+        .summer-card h3 {
+            font-weight: normal;
+            margin-top: 10px;
+        }
+
+        .summer-card h2 {
+            font-size: 28px;
+        }
+
+        .footer {
+            background-color: #172337;
+            color: white;
+            padding: 40px 20px;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+
+            margin-top: 30px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+        }
+
+        .footer-section p {
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <div class="header-container">
+            <div class="main-nev">
+
+                <div class="left-side">
+                    <div id="flipkart">🛍️ Flipkart</div>
+                    <div id="travel">✈️ Travel</div>
+                </div>
+
+                <div class="right-side">
+                    <div id="location">📍 Location not set Select delivery location ></div>
+                </div>
+
+            </div>
+
+            <div class="sec-nev">
+
+                <div class="sec-left-side">
+                    <input id="input-field" type="text" placeholder="🔍︎     Search anything">
+                </div>
+
+
+                <div class="sec-right-side">
+
+                    <div id="login">
+                        <label>Login</label>
+                        <select>
+                            <option> New_User</option>
+                            <option> Already_Exist</option>
+                        </select>
+
+                    </div>
+                    <div id="more">
+                        <label>More</label>
+                        <select>
+                            <option></option>
+                        </select>
+                    </div>
+                    <a href="">
+                        <div id="cart">Cart</div>
+                    </a>
+                </div>
+
+            </div>
+            <hr>
+            <div class="third-nev">
+
+
+                <a href="">
+
+                    <i class="fa-solid fa-house"></i>
+                    <div class="logo1">For You</div>
+                </a>
+
+                <a href="">
+                    <i class="fa-solid fa-shirt"></i>
+                    <div class="logo2">Fashion</div>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <div class="logo3">Mobile</div>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <div class="logo4">Beauty</div>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-tv"></i>
+                    <div class="logo5">Electronics</div>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-house"></i>
+                    <div class="logo6">Home</div>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-baby"></i>
+                    <div class="logo7">Baby</div>
+                </a>
+            </div>
+            <hr>
+
+        </div>
+
+        <div class="forth-contain">
+
+            <a href="">
+                <img id="forth-img1"
+                    src="https://cdn.vectorstock.com/i/500p/22/75/halloween-big-sale-poster-with-jack-o-lantern-vector-27142275.jpg"
+                    alt="img1" height="500px" width="100%">
+            </a>
+
+
+            <a href="">
+                <img id=forth-img2
+                    src="https://tse1.mm.bing.net/th/id/OIP.RNJHe8_z5sBLEhCDXvVNFwHaDt?w=500&h=250&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="img2" height="500px" width="100%">
+            </a>
+
+            <a href="">
+                <img id=forth-img3
+                    src="https://tse2.mm.bing.net/th/id/OIP.P9iHojQw-bS1sZ7ux56qFQHaDj?w=996&h=479&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="img2" height="500px" width="100%">
+            </a>
+
+        </div>
+
+        <div class="fifth-nev">
+            <div>
+                <h1 id="suggest"> Suggested For You</h1>
+            </div>
+
+            <a href="">
+                <div>
+                    <span id="right-arrow"> → </span>
+                </div>
+            </a>
+        </div>
+
+        <div class="six-contain">
+
+            <div class="six-img1">
+                <a href="">
+                    <img src="https://i.etsystatic.com/12490011/r/il/561988/2334603577/il_1140xN.2334603577_kejv.jpg"
+                        alt="img1" , height="300px">
+                </a>
+                <div class="six-img1-bottom">
+                    <h2>Flute1</h2>
+                    <h3>₹599</h3>
+                </div>
+            </div>
+
+            <div class="six-img2">
+                <a href="">
+                    <img src="https://i.etsystatic.com/12490011/r/il/561988/2334603577/il_1140xN.2334603577_kejv.jpg"
+                        alt=" img2" height="300">
+                </a>
+                <div class="six-img2-bottom">
+                    <h2>Flute2</h2>
+                    <h3>₹499</h3>
+                </div>
+            </div>
+
+            <div class="six-img3">
+                <a href="">
+                    <img src="https://i.etsystatic.com/12490011/r/il/561988/2334603577/il_1140xN.2334603577_kejv.jpg"
+                        alt="img3" height="300">
+                </a>
+
+                <div class="six-img3-bottom">
+                    <h2>Flute3</h2>
+                    <h3>₹799</h3>
+                </div>
+            </div>
+
+            <div class="six-img4">
+                <a href="">
+                    <img src="https://i.etsystatic.com/12490011/r/il/561988/2334603577/il_1140xN.2334603577_kejv.jpg"
+                        alt="img4" height="300">
+                </a>
+
+                <div class="six-img4-bottom">
+                    <h2>Flute4</h2>
+                    <h3>₹399</h3>
+                </div>
+            </div>
+
+            <div class="six-img5">
+                <a href="">
+                    <img src="https://i.etsystatic.com/12490011/r/il/561988/2334603577/il_1140xN.2334603577_kejv.jpg"
+                        alt="img5" height="300">
+                </a>
+                <div class="six-img5-bottom">
+                    <h2>Flute5</h2>
+                    <h3>₹969</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="summer-section">
+
+            <div class="summer-header">
+                <h1>Shop for a Cool Summer</h1>
+                <span class="summer-arrow">→</span>
+            </div>
+
+            <div class="summer-products">
+
+                <div class="summer-card">
+                    <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=500" alt="Face Wash">
+                    <h3>Face Wash</h3>
+                    <h2>Min. 50% Off</h2>
+                </div>
+
+                <div class="summer-card">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Shoes">
+                    <h3>Men's Casual Shoes</h3>
+                    <h2>Min. 70% Off</h2>
+                </div>
+
+                <div class="summer-card">
+                    <img src="https://images.unsplash.com/photo-1603487742131-4160ec999306?w=500" alt="Slippers">
+                    <h3>Men's Slippers & Flip Flops</h3>
+                    <h2>Min. 70% Off</h2>
+                </div>
+
+                <div class="summer-card">
+                    <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=500" alt="Sandals">
+                    <h3>Men's Sandals & Floaters</h3>
+                    <h2>Min. 70% Off</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>Contact Us</p>
+                <p>About Us</p>
+                <p>Careers</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Help</h3>
+                <p>Payments</p>
+                <p>Shipping</p>
+                <p>Cancellation</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Consumer Policy</h3>
+                <p>Terms Of Use</p>
+                <p>Security</p>
+                <p>Privacy</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Social</h3>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Twitter</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
