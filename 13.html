@@ -1,0 +1,244 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plan</title>
+
+    <style>
+        body {
+            background-color: rgba(207, 207, 207, 0.639);
+
+            font-family: -apple-system, BlinkMacSystemFont,
+                "SF Pro Display", "SF Pro Text",
+                "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+            color: #1d1d1f;
+        }
+
+        .heading {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .container {
+            margin: 50px auto;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            background-color: white;
+            width: 32%;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .inner-box1 {
+            background-color: rgba(97, 89, 243, 0.224);
+            text-align: center;
+
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+
+            padding: 20px;
+            border-radius: 20px;
+
+
+        }
+
+        .inner-box2 {
+            background-color: rgba(97, 89, 243, 0.224);
+            text-align: center;
+
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .inner-box3 {
+            background-color: rgba(97, 89, 243, 0.224);
+            text-align: center;
+
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+
+            padding: 20px;
+
+            border-radius: 20px;
+        }
+
+        .box2 {
+            position: relative;
+        }
+
+        .inner-box2 {
+            position: relative;
+        }
+
+        #best-value {
+            background-color: rgb(225, 225, 2);
+            color: rgb(97, 89, 243);
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 15px;
+
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .box1 button,
+        .box2 button,
+        .box3 button {
+            background-color: rgb(97, 89, 243);
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 15px;
+            border-radius: 20px;
+
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+
+            .box1,
+            .box2,
+            .box3 {
+                width: 100%;
+            }
+
+            .heading h1 {
+                font-size: 30px;
+            }
+
+            .below-head {
+                font-size: 22px;
+            }
+        }
+
+
+
+        .inner-lower-box1,
+        .inner-lower-box2,
+        .inner-lower-box3 {
+            margin-left: 20px;
+            font-size: 17px;
+
+        }
+
+        .below-head {
+            font-size: 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h3 style="color:rgba(74, 74, 245, 0.836)">Pricing Plans</h3>
+        <h1>Choose the perfect plan for your needs</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="box1">
+            <div class="inner-box1">
+                <h2>Lite</h2>
+                <p>ideal for individuals and small teams. Enjoy <br> access to a curated selection of templates <br> and
+                    basic customization options to get your <br> projects started.</p>
+
+                <h2> $6.99/month</h2>
+
+                <a href="">
+                    <button>Get Started</button>
+                </a>
+            </div>
+
+            <div class="inner-lower-box1">
+                <p class="below-head">For small projects </p>
+                <p> ☑ 800+ design templates <br>
+                    ☑ Essential customization options <br>
+                    ☑ Regular updates <br>
+                    ☑ Ideal for individuals and small teamis </p>
+            </div>
+
+        </div>
+
+        <div class="box2">
+            <div class="inner-box2">
+                <span id="best-value">
+                    Best Value
+                </span>
+                <h2>Pro</h2>
+                <p>Perfect for growing teams, providing <br> dvanced design capabilities, an extensive <br> wary of
+                    premium templates, and integration <br> with popular design tools</p>
+
+                <h2> $19.99/month</h2>
+                <a href="">
+                    <button>Get Started</button>
+                </a>
+
+            </div>
+
+            <div class="inner-lower-box2">
+                <p class="below-head">For developing teams
+                <p> ☑ All Lite benefits <br>
+                    ☑ 10.000+ premium template library <br>
+                    ☑ Personalized customization <br>
+                    ☑ Integration with 10 design tool including <br> Figma. Sketch, and Adobe XD <br>
+                    ☑ Enhanced regular updates <br>
+                    ☑ Perfect for growing teams </p>
+            </div>
+
+
+        </div>
+        <div class="box3">
+
+            <div class="inner-box3">
+                <h2>Unlimited</h2>
+                <p>
+                    Provides complete features for enterprises,<br>
+                    including unlimited access to all templates, <br>
+                    advanced customization, and seamless <br>
+                    integration with various design tools.</p>
+                <h2> $49.99/month</h2>
+                <a href="">
+                    <button>Get Started</button>
+                </a>
+
+            </div>
+
+            <div class="inner-lower-box3">
+
+                <div>
+
+                    <p class="below-head">For small projects </p>
+
+                    <p> ☑ For enterprises <br>
+                        ☑ All Pro benefits <br>
+                        ☑ Unlimited template library <br>
+                        ☑ Advanced customization <br>
+                        ☑ Integration with 25 design tool including <br> Figma, Sketch, and Adobe XD <br>
+                        ☑ Real-time updates <br>
+                        ☑ Best for large teams and enterproes
+                    </p>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
