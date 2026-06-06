@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Ambaliya</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ececec;
+            padding: 20px;
+        }
+
+        .card {
+            width: 380px;
+            background: white;
+            border-radius: 40px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
+        }
+
+        .plus-btn {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, .15);
+            cursor: pointer;
+        }
+
+        .plus-btn i {
+            font-size: 18px;
+            color: #000;
+        }
+
+        .cover {
+            height: 210px;
+            background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop") center/cover;
+            position: relative;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 6px solid white;
+            object-fit: cover;
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .content {
+            padding: 80px 25px 25px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .bio {
+            color: #666;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            padding: 22px 10px;
+            margin-bottom: 30px;
+        }
+
+        .stats h3 {
+            font-size: 24px;
+        }
+
+        .stats p {
+            color: #777;
+            margin-top: 8px;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .social a {
+            color: black;
+            font-size: 35px;
+            transition: .3s;
+        }
+
+        .social a:hover {
+            transform: scale(1.15);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="plus-btn">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+
+        <div class="cover">
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQErBD2vQoFVaA/profile-displayphoto-shrink_200_200/B4EZZUJOJ.HkAY-/0/1745168429214?e=1782345600&v=beta&t=1E8Y9r7F-4MrNWM4YkAs_KHLNeJjbGphpeXX_b9EmYo"
+                class="profile-img" alt="Vivek Ambaliya">
+        </div>
+
+        <div class="content">
+
+            <h1>Vivek Ambaliya</h1>
+
+            <p class="bio">AI Engineer</p>
+
+            <div class="stats">
+                <div>
+                    <h3>AI</h3>
+                    <p>ML</p>
+                </div>
+
+                <div>
+                    <h3>DSA</h3>
+                    <p>Python</p>
+                </div>
+
+                <div>
+                    <h3>AIML</h3>
+                    <p>Student</p>
+                </div>
+            </div>
+
+            <div class="social">
+
+                <a href="https://www.instagram.com/vicky_ambaliya_22/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.youtube.com/@vickypiano22" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="https://wa.me/919054092970" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
